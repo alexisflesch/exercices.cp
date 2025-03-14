@@ -9,7 +9,7 @@ PAGE_WIDTH, PAGE_HEIGHT = 1404, 1872
 ```
 
 
-Pour une appli de calcul mental, voir [Calcul mental CP](https://alexisflesch.github.io/calcul/
+Pour une appli de calcul mental, voir [Calcul mental CP](https://alexisflesch.github.io/calcul/)
 
 ## grilles.py
 
