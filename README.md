@@ -9,12 +9,13 @@ PAGE_WIDTH, PAGE_HEIGHT = 1404, 1872
 ```
 
 
-Pour une appli de calcul mental, voir [Calcul mental CP](https://alexisflesch.github.io/calcul/)
+Pour une appli de calcul mental, voir [Calcul mental CP](https://alexisflesch.github.io/calcul/
+
 ## grilles.py
 
 Formes géométriques à recopier.
 
-[![Aperçu](preview/grilles.png)](preview/grilles.pdf)
+[![Aperçu](preview/grilles.png)](out/grilles.pdf)
 
 
 ## comparaison.py
@@ -24,4 +25,4 @@ Comparaison de nombres :
 - Comparer deux nombres
 - Ecrire les nombres avant et après
 
-[![Aperçu](preview/comparaison.png)](preview/comparaison.pdf)
+[![Aperçu](preview/comparaison.png)](out/comparaison.pdf)
