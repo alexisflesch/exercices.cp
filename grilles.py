@@ -90,7 +90,7 @@ def draw_path(c, path, x_offset, y_offset):
 def generate_pdf(filename, num_pages=50):
     """Generate the PDF with multiple exercises."""
     c = canvas.Canvas(filename, pagesize=portrait((PAGE_WIDTH, PAGE_HEIGHT)))
-    c.setTitle("Grilles Agathe")  # Set the PDF title
+    c.setTitle("Grilles")  # Set the PDF title
     for _ in range(num_pages):
         if random.random() < 0.5:  # Randomly switch between two grid sizes
             path = generate_convex_polygon(0, GRID_SIZE - 1)  # Adjusted range

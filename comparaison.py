@@ -72,7 +72,7 @@ def exercise_type_2(c, x, y):
     """Generate an exercise where students must sort numbers."""
     y_offset = 350  # Increased vertical spacing for multiple exercises
     spacing = 150  # Increased horizontal spacing between numbers
-    box_size = 80  # Size of the boxes for answers
+    box_size = 100  # Size of the boxes for answers
     
     for i in range(4):  # 4 exercises per page
         y_exercise = y - (i * y_offset)
@@ -95,7 +95,11 @@ def exercise_type_2(c, x, y):
             num_x = x + j * spacing/2
             c.drawString(num_x, y_exercise, str(num))
         
+
+        y_exercise -= 10  # Increased spacing between numbers and boxes
+
         # Draw empty boxes below
+        c.setLineWidth(3)
         y_boxes = y_exercise - 120  # Increased spacing between numbers and boxes
         c.setStrokeGray(0.8)  # Light gray color
         
@@ -104,6 +108,7 @@ def exercise_type_2(c, x, y):
             c.rect(box_x - 10, y_boxes, box_size, box_size, stroke=1, fill=0)
         
         c.setStrokeGray(0)  # Reset color
+        c.setLineWidth(1)   # Reset line width
 
 
 def exercise_type_3(c, x, y):
@@ -161,7 +166,7 @@ EXERCISE_FUNCTIONS = [exercise_type_1, exercise_type_2, exercise_type_3]
 def generate_pdf(filename, num_pages=50):
     """Generate a PDF with different number comparison exercises."""
     c = canvas.Canvas(filename, pagesize=portrait((PAGE_WIDTH, PAGE_HEIGHT)))
-    c.setTitle("Number Comparison Exercises")
+    c.setTitle("Comparaison de nombres")
     
     for _ in range(num_pages):
 
